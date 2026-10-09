@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2c123d">
+<title>إلى بوشريشتي | عيد ميلاد سعيد</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--night:#241031;--plum:#4c205d;--rose:#ff8fb8;--pink:#ffc2d8;--gold:#ffe2a6;--cream:#fff6f2;--glass:rgba(255,255,255,.11)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--cream);font-family:'Cairo',sans-serif;background:radial-gradient(ellipse at 50% -10%,#75438b 0,#351746 42%,#1b0b29 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.24;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#ffc5dd 1px,transparent 1px);background-size:67px 67px,113px 113px;background-position:0 0,34px 48px}
+a{color:inherit}
+button{font:inherit}
+.wrap{position:relative;z-index:1;width:min(920px,100%);margin:auto;padding:26px 17px 70px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.8rem;color:#f9d8e8;letter-spacing:.08em}
+.topline .seal{border:1px solid #ffffff35;border-radius:99px;padding:6px 12px;background:#ffffff0d}
+.hero{text-align:center;padding:45px 0 30px;position:relative}
+.kicker{font-size:.83rem;color:var(--gold);letter-spacing:.14em}
+.crown{font-size:2rem;margin:8px auto 0;filter:drop-shadow(0 0 14px #ffd77d88)}
+h1{font-family:'Amiri',serif;font-size:clamp(2.8rem,10vw,6.2rem);line-height:1.08;margin:10px 0 12px;color:#fff0f6;text-shadow:0 3px 0 #9b4778,0 0 34px #ff8fbe55}
+.hero p{font-size:clamp(.98rem,3vw,1.15rem);color:#f2d9e9;max-width:620px;margin:0 auto;line-height:2}
+.name{color:var(--gold)}
+.hero-art{height:200px;position:relative;display:flex;align-items:center;justify-content:center;margin:8px auto 0;max-width:560px}
+.moon{position:absolute;width:145px;height:145px;border-radius:50%;background:linear-gradient(140deg,#fff5d8,#ffcfda 80%);box-shadow:0 0 35px #ffb8d955,0 0 95px #b58cff33;display:grid;place-items:center;color:#9a527b;font-size:3.5rem}
+.orbit{position:absolute;width:215px;height:170px;border:1px solid #ffe7ef70;border-radius:50%;transform:rotate(-18deg)}
+.orbit.two{width:270px;height:130px;transform:rotate(26deg);border-color:#f9d9a64d}
+.spark{position:absolute;color:var(--gold);animation:twinkle 2.5s ease-in-out infinite}
+.spark.s1{top:19px;left:21%;font-size:1.3rem}.spark.s2{right:20%;top:40px;font-size:1rem;animation-delay:.8s}.spark.s3{bottom:16px;left:28%;font-size:1.1rem;animation-delay:1.2s}.spark.s4{right:25%;bottom:25px;font-size:1.3rem;animation-delay:.5s}
+@keyframes twinkle{0%,100%{opacity:.45;transform:scale(.8) rotate(0)}50%{opacity:1;transform:scale(1.25) rotate(15deg)}}
+.floaties{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.floaty{position:absolute;bottom:-60px;opacity:.0;animation:rise 12s linear infinite;font-size:1.4rem}
+.floaty:nth-child(1){left:6%;animation-delay:0s}.floaty:nth-child(2){left:17%;animation-delay:4s}.floaty:nth-child(3){left:83%;animation-delay:2s}.floaty:nth-child(4){left:93%;animation-delay:7s}.floaty:nth-child(5){left:67%;animation-delay:5s}
+@keyframes rise{0%{transform:translateY(0) rotate(-10deg);opacity:0}10%{opacity:.7}85%{opacity:.7}100%{transform:translateY(-105vh) rotate(25deg);opacity:0}}
+.panel{position:relative;margin:18px 0;padding:clamp(20px,5vw,38px);border:1px solid #fff2fa30;border-radius:28px;background:linear-gradient(135deg,#ffffff14,#ffffff07);box-shadow:0 20px 70px #08031144,inset 0 1px 0 #ffffff17;backdrop-filter:blur(14px);overflow:hidden}
+.panel:before{content:"";position:absolute;width:190px;height:190px;top:-125px;left:-85px;border-radius:50%;background:#ff8fb820;filter:blur(2px)}
+.section-label{display:flex;align-items:center;justify-content:center;gap:9px;color:var(--gold);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+h2{font-family:'Amiri',serif;text-align:center;font-size:clamp(1.8rem,6vw,2.7rem);margin:8px 0 12px;color:#fff1f7}
+.sub{text-align:center;color:#e7cfe0;line-height:1.9;font-size:.94rem;max-width:590px;margin:0 auto 20px}
+.musicbox{display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:center;padding:17px;border-radius:20px;background:#170b23a8;border:1px solid #f7d5e72b}
+.vinyl{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:repeating-radial-gradient(circle,#2d1738 0 5px,#41204d 6px 8px);box-shadow:0 0 0 5px #ffffff0b;position:relative}
+.vinyl:after{content:"";width:19px;height:19px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--rose));position:absolute}
+.musicbox.playing .vinyl{animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.musicmeta strong{display:block;font-size:1.03rem;color:#fff4f8}
+.musicmeta span{display:block;font-size:.78rem;color:#cdb6ce;margin-top:3px}
+.musiccontrols{display:flex;align-items:center;gap:10px;margin-top:11px;flex-wrap:wrap}
+.playbtn,.surpriseBtn{border:0;border-radius:99px;padding:10px 19px;background:linear-gradient(110deg,#ff8fb8,#e5a8ff);color:#35133f;font-weight:800;box-shadow:0 8px 24px #ff8fb82a;cursor:pointer;transition:transform .2s,filter .2s}
+.playbtn:hover,.surpriseBtn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.volume-note{font-size:.75rem;color:#cbb2cc}
+.audio-fallback{font-size:.78rem;color:#f1cfe1;margin-top:12px;text-align:center}
+audio{display:none}
+.letter{position:relative}
+.letter:after{content:"♡";position:absolute;left:22px;top:14px;color:#ffb4d0;font-size:2.4rem;opacity:.55}
+.letterbody{font-family:'Amiri',serif;font-size:clamp(1.18rem,4vw,1.42rem);line-height:2.15;color:#fff0f6;white-space:pre-line;text-align:center;position:relative;z-index:1}
+.letterbody .accent{color:var(--gold)}
+.divider-heart{display:flex;align-items:center;gap:12px;justify-content:center;margin:25px auto;color:#ffc0d8}
+.divider-heart:before,.divider-heart:after{content:"";height:1px;width:min(100px,20vw);background:linear-gradient(90deg,transparent,#ffb6d2a6)}
+.prayer{margin:22px auto 0;text-align:center;max-width:650px;color:#ffe4b0;line-height:2;font-family:'Amiri',serif;font-size:1.25rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:23px}
+.mini{padding:15px 8px;border-radius:18px;text-align:center;background:#ffffff0a;border:1px solid #ffffff1a}
+.mini .emoji{font-size:2rem;display:block;margin-bottom:6px}
+.mini span:last-child{font-size:.78rem;color:#e6cde0}
+.final{text-align:center;padding:30px 12px 0}
+.final .bigheart{font-size:3rem;filter:drop-shadow(0 0 18px #ff8fb888);animation:heartbeat 1.6s ease-in-out infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.surpriseBtn{margin:10px auto 0;padding:13px 25px;font-size:1rem}
+.hidden-surprise{display:none;margin:22px auto 0;padding:22px;border-radius:22px;border:1px solid #ffe1a65c;background:linear-gradient(140deg,#ffe1a614,#ff8fb814);text-align:center;animation:pop .45s ease-out}
+.hidden-surprise.show{display:block}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.hidden-surprise p{font-family:'Amiri',serif;font-size:1.5rem;line-height:1.8;color:#fff1f7;margin:6px}
+.footer{text-align:center;margin-top:32px;color:#bda4c2;font-size:.76rem}
+.footer span{color:#ffb7d2}
+.confetti{position:fixed;top:-20px;z-index:20;pointer-events:none;animation:fall 3.6s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(760deg);opacity:0}}
+@media(max-width:560px){.wrap{padding:18px 13px 48px}.hero{padding-top:35px}.hero-art{height:170px}.moon{width:120px;height:120px;font-size:3rem}.orbit{width:190px;height:145px}.orbit.two{width:235px;height:115px}.panel{border-radius:22px}.musicbox{grid-template-columns:58px 1fr;padding:13px;gap:12px}.vinyl{width:56px;height:56px}.gallery{gap:7px}.mini{padding:12px 5px}.mini .emoji{font-size:1.6rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+
+.forgive-wrap{margin-top:28px;padding:24px 16px 28px;border:1px solid #ffb8d94a;border-radius:25px;background:radial-gradient(circle at top,#ff8fb81c,transparent 70%),#170b2380;text-align:center;overflow:hidden}
+.forgive-wrap h2{margin-bottom:8px}
+.forgive-buttons{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;min-height:90px;margin-top:18px}
+.forgive-btn{border:0;border-radius:999px;padding:13px 29px;font-weight:800;font-size:1.05rem;cursor:pointer;transition:transform .25s ease,font-size .25s ease,padding .25s ease,opacity .25s ease;box-shadow:0 8px 25px #0003}
+#yesForgive{background:linear-gradient(110deg,#ff8fb8,#ffe1a6);color:#38152e;transform:scale(1)}
+#noForgive{background:#ffffff15;border:1px solid #ffffff35;color:#fff0f6;transform:scale(1)}
+#forgiveAnswer{display:none;margin:20px auto 0;color:#ffe4f0;font-family:'Amiri',serif;font-size:1.35rem;line-height:1.8;animation:pop .4s ease-out}
+#forgiveAnswer.show{display:block}
+
+</style>
+</head>
+<body>
+<div class="floaties" aria-hidden="true">
+ <span class="floaty">💗</span><span class="floaty">✨</span><span class="floaty">🎈</span><span class="floaty">♡</span><span class="floaty">🌸</span>
+</div>
+<div class="wrap">
+ <div class="topline"><span>✦ A LITTLE WORLD FOR YOU ✦</span><span class="seal">مصمّم بحب ♡</span></div>
+ <header class="hero">
+  <div class="kicker">إلى أغلى إنسانة في قلبي</div>
+  <div class="crown">♛</div>
+  <h1>عيد ميلاد<br><span class="name">بوشريشتي</span></h1>
+  <p>اليوم موش يوم عادي… اليوم تزادت إنسانة عندها مكانة خاصة، و تستاهل الدنيا وما فيها. <span class="name">كل عام وانتي بخير يا بوشريشتي</span> 💗</p>
+  <div class="hero-art" aria-hidden="true">
+   <div class="orbit"></div><div class="orbit two"></div>
+   <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><span class="spark s4">✧</span>
+   <div class="moon">🧸</div>
+  </div>
+ </header>
+
+ <section class="panel">
+  <div class="section-label">♪ &nbsp; لحظة موسيقية &nbsp; ♪</div>
+  <h2>خلي النغمة تحكي 💗</h2>
+  <p class="sub">شغّلي الموسيقى أولاً، وخليها ترافقك وانتي تقراي الكلمات اللي جاية من القلب.</p>
+  <div class="song-frame" style="position:relative;width:100%;aspect-ratio:16/9;border-radius:20px;overflow:hidden;border:1px solid #f7d5e72b;background:#170b23">
+   <iframe
+    src="https://www.youtube.com/embed/xi4LlBnaZzw?playsinline=1&rel=0"
+    title="الأغنية التي اختارها صاحب الموقع"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+  </div>
+  <div class="audio-fallback">هذه هي الأغنية التي اخترتها؛ اضغطي تشغيل داخل الفيديو، ثم ارجعي لقراءة الرسالة. <a href="https://www.youtube.com/watch?v=xi4LlBnaZzw" target="_blank" rel="noopener">فتح الأغنية على يوتيوب</a></div>
+ </section>
+
+ <section class="panel letter">
+  <div class="section-label">♡ &nbsp; رسالة خاصة &nbsp; ♡</div>
+  <h2>من قلبي ليك يا بشرى</h2>
+  <p class="sub">اقرايها على راحتك… كل كلمة فيها عندها معنى. 🎀</p>
+  <div class="letterbody">عيد ميلاد 🎂🎂 الليلة مين عيد ميلاد فتحيا حنفرح ست الحلوين ونشيلها بعيونا بوشريشا دخلت عشرين ولات عجوزا صايي قيو قيو 🤣🤣🤣  <br>
+عيد ميلاد سعيد كل عام وانت بألف خير 🎉🎉🎉🎁🎁🎁🎇🎇🎆 كل عام وانتي فرحانة و بخير عليك وبصحتك ربي يخليك لوالديك🤲🏼 ويفرحك ويطول في عمرك يالغالية علا قلبي❤️ بزاف راكي عارفة بلي عزيز عليا بزاف ونبغيك وقفتي معايا في بزاف صوالح شابين و لي مشي شابين وليام تاوعنا تاع الضحك التبهليل تدلال فلبلاد والسهرات في التيليفون بربع سوايع 🤣🤣🤣 جامي راح ننساهم كيما كانو لينا ليام مخابطة ومهارشة وموراهم نرجعو ندحكو علا رواحنا ونزعقو علا رواحنا بصح والله كلش كان حلو كان اجمل عام فوتو في حياتي معاك نتيا لي زينتيه والله ، لموهيم علاباك بلي نبغيك بزاف ونبغيلك الخير انشاء ربي يرزقك بواش يتمناه قلبك وتكوني في بلاصة ترتاحي فيها ماديا و معنويا وتكوني ناجحة في حياتك ونفرحو بيك انشاء الله بغيتك تكوني مع الانسان لي يعرفلك ويستاهلك مالقري والله بغيتك بزاف بزاف ودعيت ربي تكوني ليا ملالغري مزلت شاد  ،، معليش ليوم لفرحة التاعك خلينا من المشاعر 🤣🤣🤣  ربي يوفقك في دراسة تاعك وربي يبعد عليك ولاد وبنات لحرام تستاهلي كل خير في حياتك وكيما ديما نقلك اي حاجة تستحقيها ديما واقف معاك في اي وقت ونتيا علبالك يال كونتاك  صايي ها قودي عييت من لكتبة  <br>
+في يوم ميلادها اللهم إني أستودعتك قلبا أحبه بصدق <br>
+فاحفظه من كل ما يؤذيه، وأملأه طمانينة وقربا منك.اللهم اجعل أيامها نور، وخطواتها توفيق وثبت قلبها على الصلاة، واجعلها لها راحة لا انقطاع فيها يارب العالمين 🤲🏼🤲🏼🤲🏼</div>
+  <div class="divider-heart">♡ ✧ ♡</div>
+  <div class="prayer">اللهم في يوم ميلادها، ارزقها سعادة لا تنتهي، وقلبًا مطمئنًا، وأيامًا مليئة بالخير، واحفظها من كل شر، واكتب لها أجمل الأقدار. آمين 🤍</div>
+ </section>
+
+ <section class="panel">
+  <div class="section-label">✧ &nbsp; هدية صغيرة &nbsp; ✧</div>
+  <h2>لأنك تستاهلي كل الحلو 🎁</h2>
+  <p class="sub">ثلاث أمنيات ليك في عامك الجديد…</p>
+  <div class="gallery">
+   <div class="mini"><span class="emoji">🌷</span><span>قلب مرتاح</span></div>
+   <div class="mini"><span class="emoji">✨</span><span>أحلام تتحقق</span></div>
+   <div class="mini"><span class="emoji">🧸</span><span>فرحة كل يوم</span></div>
+  </div>
+  <div class="final">
+   <div class="bigheart">💖</div>
+   <p class="sub">كاين مفاجأة صغيرة مخبيّة ليك…</p>
+   <button class="surpriseBtn" id="surpriseBtn" type="button">اضغطي هنا يا نونة 🎀</button>
+   <div class="hidden-surprise" id="hiddenSurprise">
+    <div style="font-size:2.2rem">🎈🧸💐🎂💖</div>
+    <p>لو كان نقدر نهديك حاجة وحدة، نهديك عين تشوفي بيها روحك كيما نشوفك أنا… غالية، مميزة، وتستاهلي كل خير. ❤️</p>
+    <p style="font-family:'Cairo',sans-serif;font-size:.9rem;color:#ffdbeb">كل عام وانتي نور وفرحة يا بشرى ♡</p>
+   </div>
+  </div>
+ </section>
+ <section class="panel forgive-wrap" id="forgiveSection">
+  <div class="section-label">♡ &nbsp; سؤال من القلب &nbsp; ♡</div>
+  <h2>وفي الأخير… تسامحيني؟ 🥺❤️</h2>
+  <p class="sub">ما نحبش نختم نهارك غير بكلام عيد الميلاد… حبيت نسقسيك سؤال من قلبي، وخليتلك الاختيار.</p>
+  <div class="forgive-buttons">
+   <button class="forgive-btn" id="yesForgive" type="button">نعم ❤️</button>
+   <button class="forgive-btn" id="noForgive" type="button">لا 🙈</button>
+  </div>
+  <div id="forgiveAnswer" role="status" aria-live="polite"></div>
+ </section>
+ <footer class="footer">صُنع بكل حب لبوشريشتي <span>♥</span> — يومك أجمل من النجوم</footer>
+</div>
+<script>
+document.getElementById('surpriseBtn').addEventListener('click',()=>{
+ const s=document.getElementById('hiddenSurprise');s.classList.toggle('show');
+ if(s.classList.contains('show')){confetti();document.getElementById('surpriseBtn').textContent='مفاجأة ثانية؟ 💗'}
+ else document.getElementById('surpriseBtn').textContent='اضغطي هنا يا نونة 🎀';
+});
+
+const yesForgive=document.getElementById('yesForgive');
+const noForgive=document.getElementById('noForgive');
+const forgiveAnswer=document.getElementById('forgiveAnswer');
+let noClicks=0;
+noForgive.addEventListener('click',()=>{
+ noClicks++;
+ const yesScale=Math.min(1+noClicks*0.18,2.6);
+ const noScale=Math.max(1-noClicks*0.16,0.12);
+ yesForgive.style.transform=`scale(${yesScale})`;
+ noForgive.style.transform=`scale(${noScale})`;
+ noForgive.style.opacity=String(Math.max(1-noClicks*0.12,0.35));
+ if(noClicks>=5){noForgive.textContent='متأكدة؟ 🥺';}
+ if(noClicks>=8){noForgive.style.opacity='0.2';}
+});
+yesForgive.addEventListener('click',()=>{
+ forgiveAnswer.innerHTML='فرّحتيني بزاف 🥹❤️ شكراً من قلبي… نتمنى نبدأو صفحة أجمل، بالراحة والتفاهم والاحترام. ربي يكتبلك كل خير يا بوشريشتي 🤍';
+ forgiveAnswer.classList.add('show');
+ yesForgive.textContent='شكراً من قلبي ❤️';
+ noForgive.style.opacity='0.45';
+ confetti();
+ // Send a notification through a Netlify Function; the Telegram token stays server-side.
+ fetch('/.netlify/functions/notify-yes', {
+   method: 'POST',
+   headers: {'Content-Type': 'application/json'},
+   body: JSON.stringify({answer: 'yes'})
+ }).catch(() => {});
+});
+
+function confetti(){
+ const bits=['💖','💗','✨','🎀','🌸','🎈','♡'];
+ for(let i=0;i<38;i++){const el=document.createElement('span');el.className='confetti';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.8+'s';el.style.fontSize=(14+Math.random()*20)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),4600)}
+}
+</script>
+</body>
+</html>
